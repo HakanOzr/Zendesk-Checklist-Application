@@ -1,0 +1,98 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "name": "SSO Problem",
+      "tag": "Parent",
+      "assets": [
+        {
+          "id": "2",
+          "name": "Login Issue",
+          "tag": "Child1",
+          "assets": [
+            {
+              "id": "3",
+              "name": "Is Connection is OK between NE Web app and IDP? ",
+              "tag":"Child2"
+            },
+            {
+              "id": "4",
+              "name": "Check (nameid-format:emailAddress) on IDP",
+               "tag":"Child2"
+            },
+            {
+              "id": "5",
+              "name": "Check IDP Identifier and other fields correctly set on IDP side",
+               "tag":"Child2"
+            },
+            {
+              "id": "6",
+              "name": "Check Certificate validation(Expiration)",
+               "tag":"Child2"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "name": "Auto-Provision",
+		  "tag": "Parent",
+          "assets": [
+            {
+              "id": "8",
+              "name": "Check if FirstName and LastName exact match on the IDP side",
+			  "tag": "Child1",
+              "assets": []
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "id": "9",
+      "name": "Test Problem",
+      "tag": "Parent",
+      "assets": [
+        {
+          "id": "10",
+          "name": "Test1 Issue",
+          "tag": "Child1",
+          "assets": [
+            {
+              "id": "11",
+              "name": "Is Connection is OK between NE Web app and IDP? ",
+              "tag":"Child2"
+            },
+            {
+              "id": "12",
+              "name": "Check (nameid-format:emailAddress) on IDP",
+               "tag":"Child2"
+            },
+            {
+              "id": "13",
+              "name": "Check IDP Identifier and other fields correctly set on IDP side",
+               "tag":"Child2"
+            },
+            {
+              "id": "14",
+              "name": "Check Certificate validation(Expiration)",
+               "tag":"Child2"
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "name": "Test-2 Issue",
+		  "tag": "Parent",
+          "assets": [
+            {
+              "id": "16",
+              "name": "Check if FirstName and LastName exact match on the IDP side",
+			  "tag": "Child1",
+              "assets": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
