@@ -7,7 +7,7 @@
 			"assets": [
 				{
 					"id": "2",
-					"name": "Login Issue",
+					"name": "IDP/SP Initiated Issue",
 					"tag": "Child1",
 					"assets": [
 						{
@@ -17,7 +17,7 @@
 						},
 						{
 							"id": "4",
-							"name": "Check (nameid-format:emailAddress) on IDP",
+							"name": "[nameid-format:emailAddress] on IDP",
 							"tag": "Child2"
 						},
 						{
