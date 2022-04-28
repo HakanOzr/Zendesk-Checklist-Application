@@ -1,40 +1,49 @@
 {
 	"data": [
 		{
+			"id": "1",
 			"name": "Agent Issues",
 			"tag": "Parent",
 			"assets": [
 				{
+					"id": "2",
 					"name": "Agent does NOT appear on the UI",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "3",
 							"name": "Confirm the installation is successful and service is up and running",
 							"tag": "Child2"
 						},
 						{
+							"id": "4",
 							"name": "Check appsettings.json file and confirm the properties",
 							"tag": "Child2"
 						},
 						{
+							"id": "5",
 							"name": "Check if the agent is able to reach the Web App properly",
 							"tag": "Child2"
 						},
 						{
+							"id": "6",
 							"name": "Check logs for further info",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
+					"id": "7",
 					"name": "Auto-Update failed/stuck",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "8",
 							"name": "Check if the agent is not very-old (auto-update was failing often in the very past versions). If so, try manual installation this time",
 							"tag": "Child2"
 						},
 						{
+							"id": "9",
 							"name": "Check AgentAutoUpdater_log.txt in AgentAutoUpdater folder",
 							"tag": "Child2"
 						}
@@ -43,30 +52,32 @@
 			]
 		},
 		{
+			"id": "10",
 			"name": "Cloud Provider",
 			"tag": "Parent",
 			"assets": [
 				{
+					"id": "11",
 					"name": "Agent got stuck launching state",
 					"tag": "Child1",
 					"assets": [
 						{
-							
+							"id": "12",	
 							"name": "Unable to launch ec2 instance. Amazon.EC2.AmazonEC2Exception: The request must contain the parameter ImageId → Linux ID and Windows ID should be filled.",
 							"tag": "Child2"
 						},
 						{
-							
+							"id": "13",
 							"name": "IE doesn’t support Linux AMI",
 							"tag": "Child2"
 						},
 						{
-							
+							"id": "14",
 							"name": "IAM Permissions",
 							"tag": "Child2"
 						},
 						{
-						
+							"id": "15",
 							"name": "The agent should be installed default folder(C:Program Files (x86)Netsparker Cloud Agent) - Known issue",
 							"tag": "Child2"
 						}
@@ -75,26 +86,26 @@
 			]
 		},
 		{
-		
+			"id": "16",
 			"name": "Basic/NTLM, Kerberos, Negotiate",
 			"tag": "Parent",
 			"assets": [
 				{
-
+					"id": "17",
 					"name": "401 - Unauthorized Error and Authentication does not work",
 					"tag": "Child1",
 					"assets": [
-						{
+						{	"id": "18",
 							"name": "Valid Raw Request and Response are needed",
 							"tag": "Child2"
 						},
 						{
-
+							"id": "19",
 							"name": "Capture authentication via Fiddler on Chrome Incognito mode ( Postman, BURP)",
 							"tag": "Child2"
 						},
 						{
-		
+							"id": "20",
 							"name": "make sure that Invicti sends the exact request by comparing valid session",
 							"tag": "Child2"
 						}
@@ -103,52 +114,55 @@
 				
 			]
 		},
-		{
+		{	"id": "21",
 			"name": "Custom Script",
 			"tag": "Parent",
 			"assets": [
 				{
-
+					"id": "22",
 					"name": "The script doesn’t fill the fields",
 					"tag": "Child1",
 					"assets": [
-						{
+						{	"id": "23",
 							"name": "Try to increase delays",
 							"tag": "Child2"
 						},
 						{
-
+							"id": "24",
 							"name": "Use the delay function on a page before await netsparker.auth.waitTimeoutAsync(2000);",
 							"tag": "Child2"
 						},
 						{
-		
+		                                        "id": "25",
 							"name": "Disable “Generate Optimized CSS path code” and generate the script again",
 							"tag": "Child2"
 						},
 						{
-		
+							"id": "26",
 							"name": "Try Javascript functions instead of native functions",
 							"tag": "Child2"
 						}
 						
 					]
 				},
-				{
+				{	"id": "27",
 					"name": "Credentials are filled in but the login button does not get the values (React App)",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "28",
 							"name": "https://invicti.atlassian.net/wiki/spaces/ES/pages/1379663936/Custom+Script+for+React+Applications",
 							"tag": "Child2"				
 						}
 					]
 				},
 				{
+					"id": "29",
 					"name": "Tips & Tricks",
 					"tag": "Parent",
 					"assets": [
 						{
+							"id": "30",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2237890589/Custom+Script+Tips+Tricks",
 							"tag": "Child1",
 							"assets": []
@@ -161,17 +175,17 @@
 			]
         },
 		{
-			
+			"id": "31",
 			"name": "Form Authentication",
 			"tag": "Parent",
 			"assets": [
 				{
-	
+					"id": "32",
 					"name": "Interactive Login - can’t click reCAPTCHA",
 					"tag": "Child1",
 					"assets": [
 						{
-						
+							"id": "33",
 							"name": "Change RequiresHTTPRequester : False in Adv Settings",
 							"tag": "Child2"
 						}
@@ -179,30 +193,30 @@
 					]
 				},
 				{
-				
+					"id": "34",
 					"name": "Page doesn’t load properly",
 					"tag": "Child1",
 					"assets": [
 						{
-					
+							"id": "35",
 							"name": "Connection and product components are up-to-date.",
 							"tag": "Child2"
 							
 						},
                         {
-					
+							"id": "36",
 							"name": "Proxy settings may need to be arranged.",
 							"tag": "Child2"
 							
 						},
                         {
-					
+							"id": "37",				
 							"name": "Is the page loading on Chromium?",
 							"tag": "Child2"
 							
 						},
                         {
-					
+							"id": "38",
 							"name": "Any console errors on dev tools (f12)",
 							"tag": "Child2"
 							
@@ -212,15 +226,17 @@
 			]
 		},
 		{
+			"id": "39",
 			"name": "Hawk",
 			"tag": "Parent",
 			"assets": [
 				{
-
+					"id": "40",
 					"name": "General Troubleshooting",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "41",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2235990396/Hawk+Troubleshooting",
 							"tag": "Child2"
 						}
@@ -229,30 +245,36 @@
 			]
 		},
         {
+			"id": "42",
 			"name": "Imported Links",
 			"tag": "Parent",
 			"assets": [
 				{
+					"id": "43",
 
 					"name": "Error during import",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "44",
 							"name": "get the file and check the syntax",
 							"tag": "Child2"
 						},
 						{
+							"id": "45",
 							"name": "check max file size is exceed",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
+					"id": "46",
 
 					"name": "Bad Request due to big imported link file",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "47",
 							"name": "convert har file to fiddler",
 							"tag": "Child2"
 						}
@@ -261,34 +283,41 @@
 			]
 		},
         {
+		"id": "48",
 			"name": "Installation & Migration",
 			"tag": "Parent",
 			"assets": [
 				{
+					"id": "49",
 
 					"name": "IE Onpremise Web App is not installing",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "50",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2249195977/IE+Web+APP+Installation+Cases",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
+					"id": "51",
 
 					"name": "Agent installation problems",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "52",
 							"name": "What is the version of Agent? Is it the latest?",
 							"tag": "Child2"
 						},
                         {
+				"id": "53",
 							"name": "Permissions are OK?",
 							"tag": "Child2"
 						},
                         {
+				"id": "54",
 							"name": "Reproduce issues in your environment.",
 							"tag": "Child2"
 						}
@@ -296,32 +325,35 @@
 				},
                 {
 
+					"id": "55",
 					"name": "Auth Verifier Problems",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "56,
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123660/Auth+Verifier+Troubleshooting",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+					"id": "57
 					"name": "DB Migration",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "58",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/1618116928/Migration+Backup+Restore",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+						"id": "59",
 					"name": "Changing Data storage path ( Scan Files)",
 					"tag": "Child1",
 					"assets": [
-						{
+						{	"id": "60",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/975372676/Changing+Data+Storage+Paths",
 							"tag": "Child2"
 						}
@@ -330,19 +362,22 @@
 			]
 		},
         {
+			"id": "61,
 			"name": "Issue Tracking",
 			"tag": "Parent",
 			"assets": [
 				{
-
+					"id": "62,
 					"name": "Jira Cases",
 					"tag": "Child1",
 					"assets": [
 						{
+							"id": "63,
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/edit-v2/2238776157https://invicti.atlassian.net/wiki/spaces/TS/pages/edit-v2/2238776157",
 							"tag": "Child2"
 						},
                         {
+							"id": "64,
 							"name": "User-defined notifications can not retest.",
 							"tag": "Child2"
 						}
