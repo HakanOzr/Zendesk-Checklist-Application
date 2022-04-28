@@ -1,44 +1,36 @@
 {
 	"data": [
 		{
-			"id": "1",
-			"name": "SSO Problem",
+			"name": "Agent Issues",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "2",
-					"name": "IDP/SP Initiated Issue",
+					"name": "Agent does NOT appear on the UI",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "3",
-							"name": "Is Connection is OK between NE Web app and IDP? ",
+							"name": "Confirm the installation is successful and service is up and running",
 							"tag": "Child2"
 						},
 						{
-							"id": "4",
-							"name": "[nameid-format:emailAddress] on IDP",
+							"name": "Check appsettings.json file and confirm the properties",
 							"tag": "Child2"
 						},
 						{
-							"id": "5",
-							"name": "Check IDP Identifier and other fields correctly set on IDP side",
+							"name": "Check if the agent is able to reach the Web App properly",
 							"tag": "Child2"
 						},
 						{
-							"id": "6",
-							"name": "Check Certificate validation(Expiration)",
+							"name": "Check logs for further info",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "7",
-					"name": "Auto-Provision",
+					"name": "Auto-Update failed/stuck",
 					"tag": "Parent",
 					"assets": [
 						{
-							"id": "8",
 							"name": "Check if FirstName and LastName exact match on the IDP side",
 							"tag": "Child1",
 							"assets": []
@@ -48,44 +40,42 @@
 			]
 		},
 		{
-			"id": "9",
 			"name": "Test Problem",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "10",
 					"name": "Test1 Issue",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "11",
+							
 							"name": " Doc https://invicti.atlassian.net/wiki/spaces/TS/overview",
 							"tag": "Child2"
 						},
 						{
-							"id": "12",
+							
 							"name": "Check (nameid-format:emailAddress) on IDP",
 							"tag": "Child2"
 						},
 						{
-							"id": "13",
+							
 							"name": "Check IDP Identifier and other fields correctly set on IDP side",
 							"tag": "Child2"
 						},
 						{
-							"id": "14",
+						
 							"name": "Check Certificate validation(Expiration)",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "15",
+					
 					"name": "Test-2 Issue",
 					"tag": "Parent",
 					"assets": [
 						{
-							"id": "16",
+					
 							"name": "Check if FirstName and LastName exact match on the IDP side",
 							"tag": "Child1",
 							"assets": []
@@ -95,185 +85,41 @@
 			]
 		},
 		{
-			"id": "17",
+		
 			"name": "Agent Issue",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "18",
+
 					"name": "Connectıon Issue",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "19",
 							"name": "Is Connection is OK between NE Web app and IDP? ",
 							"tag": "Child2"
 						},
 						{
-							"id": "20",
+
 							"name": "Check (nameid-format:emailAddress) on IDP",
 							"tag": "Child2"
 						},
 						{
-							"id": "21",
+		
 							"name": "Check IDP Identifier and other fields correctly set on IDP side",
 							"tag": "Child2"
 						},
 						{
-							"id": "22",
+							
 							"name": "Check Certificate validation(Expiration)",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "23",
 					"name": "Auto-Provision",
 					"tag": "Parent",
 					"assets": [
 						{
-							"id": "24",
-							"name": "Check if FirstName and LastName exact match on the IDP side",
-							"tag": "Child1",
-							"assets": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "25",
-			"name": "Test Problem",
-			"tag": "Parent",
-			"assets": [
-				{
-					"id": "26",
-					"name": "Test1 Issue",
-					"tag": "Child1",
-					"assets": [
-						{
-							"id": "27",
-							"name": "Is Connection is OK between NE Web app and IDP? ",
-							"tag": "Child2"
-						},
-						{
-							"id": "28",
-							"name": "Check (nameid-format:emailAddress) on IDP",
-							"tag": "Child2"
-						},
-						{
-							"id": "29",
-							"name": "Check IDP Identifier and other fields correctly set on IDP side",
-							"tag": "Child2"
-						},
-						{
-							"id": "30",
-							"name": "Check Certificate validation(Expiration)",
-							"tag": "Child2"
-						}
-					]
-				},
-				{
-					"id": "31",
-					"name": "Test-2 Issue",
-					"tag": "Parent",
-					"assets": [
-						{
-							"id": "32",
-							"name": "Check if FirstName and LastName exact match on the IDP side",
-							"tag": "Child1",
-							"assets": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "33",
-			"name": "SSO Problem",
-			"tag": "Parent",
-			"assets": [
-				{
-					"id": "34",
-					"name": "Login Issue",
-					"tag": "Child1",
-					"assets": [
-						{
-							"id": "35",
-							"name": "Is Connection is OK between NE Web app and IDP? ",
-							"tag": "Child2"
-						},
-						{
-							"id": "36",
-							"name": "Check (nameid-format:emailAddress) on IDP",
-							"tag": "Child2"
-						},
-						{
-							"id": "37",
-							"name": "Check IDP Identifier and other fields correctly set on IDP side",
-							"tag": "Child2"
-						},
-						{
-							"id": "38",
-							"name": "Check Certificate validation(Expiration)",
-							"tag": "Child2"
-						}
-					]
-				},
-				{
-					"id": "39",
-					"name": "Auto-Provision",
-					"tag": "Parent",
-					"assets": [
-						{
-							"id": "40",
-							"name": "Check if FirstName and LastName exact match on the IDP side",
-							"tag": "Child1",
-							"assets": []
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "41",
-			"name": "Test Problem",
-			"tag": "Parent",
-			"assets": [
-				{
-					"id": "42",
-					"name": "Test1 Issue",
-					"tag": "Child1",
-					"assets": [
-						{
-							"id": "43",
-							"name": "Is Connection is OK between NE Web app and IDP? ",
-							"tag": "Child2"
-						},
-						{
-							"id": "44",
-							"name": "Check (nameid-format:emailAddress) on IDP",
-							"tag": "Child2"
-						},
-						{
-							"id": "45",
-							"name": "Check IDP Identifier and other fields correctly set on IDP side",
-							"tag": "Child2"
-						},
-						{
-							"id": "46",
-							"name": "Check Certificate validation(Expiration)",
-							"tag": "Child2"
-						}
-					]
-				},
-				{
-					"id": "47",
-					"name": "Test-2 Issue",
-					"tag": "Parent",
-					"assets": [
-						{
-							"id": "48",
 							"name": "Check if FirstName and LastName exact match on the IDP side",
 							"tag": "Child1",
 							"assets": []
