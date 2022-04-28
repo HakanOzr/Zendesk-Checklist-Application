@@ -1,49 +1,49 @@
 {
 	"data": [
 		{
-			"id": "1",
+            "id": "1",
 			"name": "Agent Issues",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "2",
+                    "id": "2",
 					"name": "Agent does NOT appear on the UI",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "3",
+                            "id": "3",
 							"name": "Confirm the installation is successful and service is up and running",
 							"tag": "Child2"
 						},
 						{
-							"id": "4",
+                            "id": "4",
 							"name": "Check appsettings.json file and confirm the properties",
 							"tag": "Child2"
 						},
 						{
-							"id": "5",
+                            "id": "5",
 							"name": "Check if the agent is able to reach the Web App properly",
 							"tag": "Child2"
 						},
 						{
-							"id": "6",
+                            "id": "6",
 							"name": "Check logs for further info",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "7",
+                    "id": "7",
 					"name": "Auto-Update failed/stuck",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "8",
+                            "id": "8",
 							"name": "Check if the agent is not very-old (auto-update was failing often in the very past versions). If so, try manual installation this time",
 							"tag": "Child2"
 						},
 						{
-							"id": "9",
+                            "id": "9",
 							"name": "Check AgentAutoUpdater_log.txt in AgentAutoUpdater folder",
 							"tag": "Child2"
 						}
@@ -52,22 +52,22 @@
 			]
 		},
 		{
-			"id": "10",
+            "id": "10",
 			"name": "Cloud Provider",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "11",
+                    "id": "11",
 					"name": "Agent got stuck launching state",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "12",	
+							"id": "12",
 							"name": "Unable to launch ec2 instance. Amazon.EC2.AmazonEC2Exception: The request must contain the parameter ImageId → Linux ID and Windows ID should be filled.",
 							"tag": "Child2"
 						},
 						{
-							"id": "13",
+                            "id": "13",
 							"name": "IE doesn’t support Linux AMI",
 							"tag": "Child2"
 						},
@@ -77,7 +77,7 @@
 							"tag": "Child2"
 						},
 						{
-							"id": "15",
+                            "id": "15",
 							"name": "The agent should be installed default folder(C:Program Files (x86)Netsparker Cloud Agent) - Known issue",
 							"tag": "Child2"
 						}
@@ -86,26 +86,22 @@
 			]
 		},
 		{
-			"id": "16",
+            "id": "16",
 			"name": "Basic/NTLM, Kerberos, Negotiate",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "17",
+                    "id": "17",
 					"name": "401 - Unauthorized Error and Authentication does not work",
 					"tag": "Child1",
 					"assets": [
-						{	"id": "18",
+						{
+                            "id": "18",
 							"name": "Valid Raw Request and Response are needed",
 							"tag": "Child2"
 						},
 						{
-							"id": "19",
-							"name": "Capture authentication via Fiddler on Chrome Incognito mode ( Postman, BURP)",
-							"tag": "Child2"
-						},
-						{
-							"id": "20",
+                            "id": "19",
 							"name": "make sure that Invicti sends the exact request by comparing valid session",
 							"tag": "Child2"
 						}
@@ -114,55 +110,58 @@
 				
 			]
 		},
-		{	"id": "21",
+		{
+            "id": "20",
 			"name": "Custom Script",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "22",
+                    "id": "21",
 					"name": "The script doesn’t fill the fields",
 					"tag": "Child1",
 					"assets": [
-						{	"id": "23",
+						{
+                            "id": "22",
 							"name": "Try to increase delays",
 							"tag": "Child2"
 						},
 						{
-							"id": "24",
+                            "id": "23",
 							"name": "Use the delay function on a page before await netsparker.auth.waitTimeoutAsync(2000);",
 							"tag": "Child2"
 						},
 						{
-		                                        "id": "25",
+                            "id": "24",
 							"name": "Disable “Generate Optimized CSS path code” and generate the script again",
 							"tag": "Child2"
 						},
 						{
-							"id": "26",
+                            "id": "25",
 							"name": "Try Javascript functions instead of native functions",
 							"tag": "Child2"
 						}
 						
 					]
 				},
-				{	"id": "27",
+				{
+                    "id": "26",
 					"name": "Credentials are filled in but the login button does not get the values (React App)",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "28",
+                            "id": "27",
 							"name": "https://invicti.atlassian.net/wiki/spaces/ES/pages/1379663936/Custom+Script+for+React+Applications",
 							"tag": "Child2"				
 						}
 					]
 				},
 				{
-					"id": "29",
+                    "id": "28",
 					"name": "Tips & Tricks",
 					"tag": "Parent",
 					"assets": [
 						{
-							"id": "30",
+                            "id": "29",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2237890589/Custom+Script+Tips+Tricks",
 							"tag": "Child1",
 							"assets": []
@@ -175,17 +174,17 @@
 			]
         },
 		{
-			"id": "31",
+            "id": "30",
 			"name": "Form Authentication",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "32",
+                    "id": "31",
 					"name": "Interactive Login - can’t click reCAPTCHA",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "33",
+                            "id": "32",
 							"name": "Change RequiresHTTPRequester : False in Adv Settings",
 							"tag": "Child2"
 						}
@@ -193,30 +192,30 @@
 					]
 				},
 				{
-					"id": "34",
+                    "id": "33",
 					"name": "Page doesn’t load properly",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "35",
+                            "id": "34",
 							"name": "Connection and product components are up-to-date.",
 							"tag": "Child2"
 							
 						},
                         {
-							"id": "36",
+                            "id": "35",
 							"name": "Proxy settings may need to be arranged.",
 							"tag": "Child2"
 							
 						},
                         {
-							"id": "37",				
+                            "id": "36",
 							"name": "Is the page loading on Chromium?",
 							"tag": "Child2"
 							
 						},
                         {
-							"id": "38",
+                            "id": "37",
 							"name": "Any console errors on dev tools (f12)",
 							"tag": "Child2"
 							
@@ -226,17 +225,17 @@
 			]
 		},
 		{
-			"id": "39",
+            "id": "38",
 			"name": "Hawk",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "40",
+                    "id": "39",
 					"name": "General Troubleshooting",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "41",
+                            "id": "40",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2235990396/Hawk+Troubleshooting",
 							"tag": "Child2"
 						}
@@ -245,36 +244,34 @@
 			]
 		},
         {
-			"id": "42",
+            "id": "41",
 			"name": "Imported Links",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "43",
-
+                    "id": "42",
 					"name": "Error during import",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "44",
+                            "id": "43",
 							"name": "get the file and check the syntax",
 							"tag": "Child2"
 						},
 						{
-							"id": "45",
+                            "id": "44",
 							"name": "check max file size is exceed",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "46",
-
+                    "id": "45",
 					"name": "Bad Request due to big imported link file",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "47",
+                            "id": "46",
 							"name": "convert har file to fiddler",
 							"tag": "Child2"
 						}
@@ -283,77 +280,70 @@
 			]
 		},
         {
-		"id": "48",
+            "id": "47",
 			"name": "Installation & Migration",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "49",
-
+                    "id": "48",
 					"name": "IE Onpremise Web App is not installing",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "50",
+                            "id": "48",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2249195977/IE+Web+APP+Installation+Cases",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-					"id": "51",
-
+                    "id": "50",
 					"name": "Agent installation problems",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "52",
+                            "id": "51",
 							"name": "What is the version of Agent? Is it the latest?",
 							"tag": "Child2"
 						},
                         {
-				"id": "53",
-							"name": "Permissions are OK?",
-							"tag": "Child2"
-						},
-                        {
-				"id": "54",
+                            "id": "52",
 							"name": "Reproduce issues in your environment.",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
-					"id": "55",
+                    "id": "53",
 					"name": "Auth Verifier Problems",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "56,
+                            "id": "54",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123660/Auth+Verifier+Troubleshooting",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-					"id": "57
+                    "id": "55",
 					"name": "DB Migration",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "58",
+                            "id": "56",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/1618116928/Migration+Backup+Restore",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-						"id": "59",
+                    "id": "57",
 					"name": "Changing Data storage path ( Scan Files)",
 					"tag": "Child1",
 					"assets": [
-						{	"id": "60",
+						{
+                            "id": "58",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/975372676/Changing+Data+Storage+Paths",
 							"tag": "Child2"
 						}
@@ -362,22 +352,22 @@
 			]
 		},
         {
-			"id": "61,
+            "id": "59",
 			"name": "Issue Tracking",
 			"tag": "Parent",
 			"assets": [
 				{
-					"id": "62,
+                    "id": "60",
 					"name": "Jira Cases",
 					"tag": "Child1",
 					"assets": [
 						{
-							"id": "63,
+                            "id": "61",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/edit-v2/2238776157https://invicti.atlassian.net/wiki/spaces/TS/pages/edit-v2/2238776157",
 							"tag": "Child2"
 						},
                         {
-							"id": "64,
+                            "id": "62",
 							"name": "User-defined notifications can not retest.",
 							"tag": "Child2"
 						}
@@ -386,97 +376,109 @@
 			]
 		},
         {
+            "id": "63",
 			"name": "Licensing",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "64",
 					"name": "Whitelisting",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "65",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123651/License+Whistelisting+IAST+PCI+Troubleshooting+-+IE#Whitelisting",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-
+                    "id": "66",
 					"name": "IAST Activation",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "67",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123651/License+Whistelisting+IAST+PCI+Troubleshooting+-+IE#IAST-Activation",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "67",
 					"name": "PCI Activation",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "68",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123651/License+Whistelisting+IAST+PCI+Troubleshooting+-+IE#PCI-Activation",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "69",
 					"name": "Refreshing License",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "70",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123651/License+Whistelisting+IAST+PCI+Troubleshooting+-+IE#Refreshing-License",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "71",
 					"name": "Offline Activation",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "72",
 							"name": "https://www.invicti.com/support/installing-invicti-standard/#using-the-offline-license-wizard",
 							"tag": "Child2"
 						},
                         {
+                            "id": "73",
 							"name": "Check the system date & time settings.",
 							"tag": "Child2"
 						},
                         {
+                            "id": "74",
 							"name": "Use CleanUninstaller tool",
 							"tag": "Child2"
 						},
                         {
+                            "id": "75",
 							"name": "Do you generate the license file from the machine that needs to be license activated?",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "76",
 					"name": "License Activated on Another Machine",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "77",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123651/License+Whistelisting+IAST+PCI+Troubleshooting+-+IE#License-Activated-on-Another-Machine",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "78",
 					"name": "Expiration Issues ",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "79",
 							"name": "check the LK on CRM to see if it is expired or not. If it is expired, we should contact CSM since there is no technical process for us to do and let the customer know. ",
 							"tag": "Child2"
 						},
                         {
+                            "id": "80",
 							"name": "If the License is not expired on CRM and the customer gets the “expired license” error, the CleanUninstaller tool can be used firstly. ",
 							"tag": "Child2"
 						}
@@ -485,23 +487,27 @@
 			]
 		},
         {
+            "id": "81",
 			"name": "Manual Crawling",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "82",
 					"name": "IS can’t crawl the website",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "83",
 							"name": "remove Netsparker cert from cert manager",
 							"tag": "Child2"
 						},
 						{
+                            "id": "84",
 							"name": "re-install Netsparker cert",
 							"tag": "Child2"
 						},
 						{
+                            "id": "85",
 							"name": "suggest Fiddler if none of above works",
 							"tag": "Child2"
 						}
@@ -510,15 +516,17 @@
 			]
 		},
         {
+            "id": "86",
 			"name": "Pre-request Scripts",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "87",
 					"name": "Enabling pre-req script ondemand",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "88",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2234646707/Enabling+the+Pre-request+Script+on+the+Customer+account+for+Invicti+Enterprise+Ondemand",
 							"tag": "Child2"
 						}
@@ -527,30 +535,34 @@
 			]
 		},
         {
+            "id": "89",
 			"name": "Reporting",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "90",
 					"name": "Custom report template",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "91",
 							"name": "Escalate to tier-2 if they only want to change some specific parts in the report template. Please learn the exact parts that needs to be changed.",
 							"tag": "Child2"
 						},
 						{
+                            "id": "92",
 							"name": "Create PFR if they request general changings on report templates.",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
-
+                    "id": "93",
 					"name": "Report UI problems",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "94",
 							"name": "Please escalate to tier-2 after reproducing if possible",
 							"tag": "Child2"
 						}
@@ -559,75 +571,86 @@
 			]
 		},
         {
+            "id": "95",
 			"name": "Scan Problems",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "96",
 					"name": "Long-running Scans ",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "97",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2248933864/Long+Running+Scans+In+Progress",
 							"tag": "Child2"
 						}
 					]
 				},
 				{
+                    "id": "98",
 
 					"name": "Short running Scans ",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "99",
 							"name": "Authentication is valid",
 							"tag": "Child2"
 						},
                         {
+                            "id": "100",
 							"name": "Target Website is reacheable",
 							"tag": "Child2"
 						},
                         {
+                            "id": "101",
 							"name": "Website response is OK on chromium",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "102",
 					"name": "Coverage Issues",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "103",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2241429987/Scan+Coverage+Troubleshooting+In+Progress",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "104",
 					"name": "Maximum Logout Exceeded",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "105",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2249851155/Maximum+Logout+Exceeded+In+Progress",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "106",
 					"name": "Login Failed",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "107",
 							"name": "the product components are up-to-date",
 							"tag": "Child2"
 						},
                         {
+                            "id": "108",
 							"name": "Check if the credentials are working correctly and you can login properly using internal Chromium (v79) using the scanner IP address (if possible)",
 							"tag": "Child2"
 						},
                         {
+                            "id": "109",
 							"name": "Capture the Network traffics with Fiddler from a Browser Login and the scanner login and compare them to see what elements are the scanner missing",
 							"tag": "Child2"
 						}
@@ -636,31 +659,38 @@
 			]
 		},
         {
+            "id": "110",
 			"name": "Shark",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    
+                    "id": "111",
 					"name": "General checks",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "112",
 							"name": "Is Shark active on the Scan profile?",
 							"tag": "Child2"
 						},
 						{
+                            "id": "113",
 							"name": "Is the Shark token correct?",
 							"tag": "Child2"
 						},
 						{
+                            "id": "114",
 							"name": "Is the Shark active on the Server?",
 							"tag": "Child2"
 						},
 						{
+                            "id": "115",
 							"name": "We need nstrace logs for checking the Shark active or not.",
 							"tag": "Child2"
 						},
                         {
+                            "id": "116",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2154267046/Checking+Acusensor+Shark+Success+-+Acunetix+360+Invicti+Enterprise#How-to-Fix-“Shark-communication-is-failed.“-Error",
 							"tag": "Child2"
 						}
@@ -669,49 +699,56 @@
 			]
 		},
         {
+            "id": "117",
 			"name": "SSO (Single Sign-On)",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "118",
 					"name": "IDP/SP Issues",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "119",
 							"name": "Is Connection OK between the IE Web app and IDP?",
 							"tag": "Child2"
 						},
 						{
+                            "id": "120",
 							"name": "[nameid-format:emailAddress] on the IDP",
 							"tag": "Child2"
 						},
 						{
+                            "id": "121",
 							"name": "Check IDP Identifier and other fields are correctly set on the IDP side",
 							"tag": "Child2"
 						},
 						{
+                            "id": "122",
 							"name": "Check Certificate validation (Expiration)",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "123",
 					"name": "Auto-Provision",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "124",
 							"name": "Check if FirstName and LastName (case sensitive) exact match on the IDP side",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "125",
 					"name": "SAML Encryption",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "126",
 							"name": "Please check the certificate is valid",
 							"tag": "Child2"
 						}
@@ -720,26 +757,29 @@
 			]
 		},
         {
+            "id": "127",
 			"name": "Teams & User Problems",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "128",
 					"name": "Ondemand Primary User Changing issues:",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "129",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2250539018/Account+Owner+Chance+Enterprise+Ondemand",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "130",
 					"name": "Onpremise Account Owner Changing",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "131",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/981631066/Admin+Account+Change+OnPremises",
 							"tag": "Child2"
 						}
@@ -748,22 +788,24 @@
 			]
 		},
         {
+            "id": "132",
 			"name": "VDB",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "133",
 					"name": "Offline VDB",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "134",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2095841482/VDB#Updating-VDB-Manuallyhttps://invicti.atlassian.net/wiki/spaces/TS/pages/2095841482/VDB#Updating-VDB-Manually",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "135",
 					"name": "Does Netsparker check XXX vulnerability? ",
 					"tag": "Child1",
 					"assets": [
@@ -776,45 +818,51 @@
 			]
 		},
         {
+            "id": "136",
 			"name": "Vulnerability Analysis",
 			"tag": "Parent",
 			"assets": [
 				{
-
+                    "id": "137",
 					"name": "False Positive Cases",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "138",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2207252834/F+N+Troubleshooting",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "139",
 					"name": "False Negative Cases",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "139",
 							"name": "Does client has the report from other tool? Ask for it.",
 							"tag": "Child2"
 						},
                         {
+                            "id": "140",
 							"name": "Check authentication is OK if exists",
 							"tag": "Child2"
 						},
                         {
+                            "id": "141",
 							"name": "Did Invicti crawl the vulnerable URL with exact Parameter?",
 							"tag": "Child2"
 						}
 					]
 				},
                 {
-
+                    "id": "142",
 					"name": "Weak Cipher",
 					"tag": "Child1",
 					"assets": [
 						{
+                            "id": "143",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2207351089/Weak+Ciphers+Enabled",
 							"tag": "Child2"
 						}
