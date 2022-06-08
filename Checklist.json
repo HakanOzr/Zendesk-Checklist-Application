@@ -33,6 +33,35 @@
 					]
 				},
 				{
+                    "id": "143",
+					"name": "Agent service does not start",
+					"tag": "Child1",
+					"assets": [
+						{
+                            "id": "144",
+							"name": "Error 1053",
+							"tag": "Child2",
+                            "assets": [
+                                {
+                                    "id": "145",
+                                    "name": "Confirm the appsettings.json of the agent doesn't have syntax errors. A comma or a bracket might be removed",
+                                    "tag": "Child3"
+                                },
+                                {
+                                    "id": "146",
+                                    "name": "Check Event Viewer Logs",
+                                    "tag": "Child3"
+                                },
+                                {
+                                    "id": "147",
+                                    "name": "Add ServicesPipeTimeout to Registry Editor by following this: https://appuals.com/how-to-fix-error-1053-the-service-did-not-respond-to-the-start-or-control-request-in-a-timely-fashion/",
+                                    "tag": "Child3"
+                                }
+                            ]    
+						}
+					]
+				},
+				{
                     "id": "7",
 					"name": "Auto-Update failed/stuck",
 					"tag": "Child1",
