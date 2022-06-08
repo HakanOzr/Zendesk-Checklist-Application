@@ -33,28 +33,6 @@
 					]
 				},
 				{
-                    "id": "144",
-					"name": "Agent service does not start (if Error 1053)",
-					"tag": "Child1",
-					"assets": [
-                        {
-                            "id": "145",
-                            "name": "Confirm the appsettings.json of the agent doesn't have syntax errors. A comma or a bracket might be removed",
-                            "tag": "Child2"
-                        },
-                        {
-                            "id": "146",
-                            "name": "Check Event Viewer Logs",
-                            "tag": "Child2"
-                        },
-                        {
-                            "id": "147",
-                            "name": "https://appuals.com/how-to-fix-error-1053-the-service-did-not-respond-to-the-start-or-control-request-in-a-timely-fashion/",
-                            "tag": "Child2"
-                        }
-					]
-				},
-				{
                     "id": "7",
 					"name": "Auto-Update failed/stuck",
 					"tag": "Child1",
@@ -337,24 +315,12 @@
 				},
                 {
                     "id": "53",
-					"name": "Auth Verifier Problems On-Demand",
+					"name": "Auth Verifier Problems",
 					"tag": "Child1",
 					"assets": [
 						{
                             "id": "54",
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2232123660/Auth+Verifier+Troubleshooting",
-							"tag": "Child2"
-						}
-					]
-				},
-                {
-                    "id": "150",
-					"name": "Auth Verifier Problems On-Premises",
-					"tag": "Child1",
-					"assets": [
-						{
-                            "id": "151",
-							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2304999434/Auth+Verifier+Troubleshooting+On-Premises",
 							"tag": "Child2"
 						}
 					]
@@ -373,7 +339,7 @@
 				},
                 {
                     "id": "57",
-					"name": "Changing Data storage path (Scan Files)",
+					"name": "Changing Data storage path ( Scan Files)",
 					"tag": "Child1",
 					"assets": [
 						{
@@ -381,30 +347,6 @@
 							"name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/975372676/Changing+Data+Storage+Paths",
 							"tag": "Child2"
 						}
-					]
-				},
-                {
-                    "id": "148",
-					"name": "IS has stopped working",
-					"tag": "Child1",
-					"assets": [
-                        {
-                            "id": "149",
-                            "name": "https://invicti.atlassian.net/wiki/spaces/TS/pages/2293006569/Invicti+Standard+has+stopped+working",
-                            "tag": "Child2"
-                        }
-					]
-				}
-                {
-                    "id": "152",
-					"name": "IE On-Premises Silent Install DB Error",
-					"tag": "Child1",
-					"assets": [
-                        {
-                            "id": "153",
-                            "name": "Delete the NetsparkerCloud folder located at C:\\Users\\NetsparkerAppPool\\AppData\\Roaming and retry",
-                            "tag": "Child2"
-                        }
 					]
 				}
 			]
