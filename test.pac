@@ -3,5 +3,5 @@ function FindProxyForURL(url, host) {
     return "DIRECT";
   }
 
-  return "PROXY 3.68.233.12:3169";
+  return "PROXY localhost:9090";
 }
